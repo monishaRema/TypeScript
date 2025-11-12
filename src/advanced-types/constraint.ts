@@ -41,6 +41,17 @@ type Vehicle1 = keyof PeopleVehicl;
 
 const res: Vehicle = "bike"
 const res1 : Vehicle1 = "car"
-console.log(res, res1)
+// console.log(res, res1)
 
 // Key Of Constraint
+
+
+const getPropertyFromObj = <T>(obj:T, key: keyof T) => {
+
+    return obj[key]
+
+}
+
+
+const studentName = getPropertyFromObj({name: 'sharif', age: 20},'name' )
+console.log(studentName)
