@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const userRole = {
-    viewer: "viewer",
+    viewer: "Viewer",
     admin: "Admin"
 };
 const canEdit = (role) => {
-    if (role === userRole.viewer) {
+    if (role === userRole.viewer) { //viewer === viewer
         console.log("view");
     }
 };
